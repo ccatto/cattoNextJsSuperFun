@@ -24,7 +24,7 @@ export async function getStaticPaths() {
 // @ts-nocheck
 export default function Post({ postData }) {
     return (
-      <Layout>
+      <Layout home={undefined}>
         <Head>
           <title>{postData.title}</title>
         </Head>
@@ -38,4 +38,4 @@ export default function Post({ postData }) {
       </Layout>
     );
   }
-  
+
